@@ -3,6 +3,8 @@ GEM
   specs:
     addressable (2.2.7)
     daemons (1.1.8)
+    dragonfly (0.9.10)
+      rack
     eventmachine (0.12.10)
     face (0.0.4)
       json (>= 1.4.6)
@@ -41,6 +43,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  dragonfly
   face
   heroku
   sinatra
