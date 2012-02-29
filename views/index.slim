@@ -2,4 +2,9 @@ doctype html
 head
   title Pattersonify.Me
 body
-  img src="#{Dragonfly[:images].fetch_url('http://twitpic.com/show/full/8m5g3a').thumb('200x150').url}"
+  - if @image
+    img src="#{@image.url}"
+  - else
+    form
+      input type="text" name="url"
+      input type="submit" value="Pattersonify!"
